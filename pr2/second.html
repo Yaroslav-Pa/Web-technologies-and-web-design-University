@@ -6,11 +6,12 @@
     <title>Резюме</title>
 </head>
 <body >
-    <div class="center">    
+    <div class="center" style="column-gap: 20px; row-gap: 20px; flex-direction: column;">    
         <div style="max-width: 28rem;" class="border">    
-            <h1 style="text-align: center; background-color: aquamarine; margin-top: 0; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem;">Резюме</h1>
+            <h1 class="mainTheme">Резюме</h1>
             <h2 class="theme">Персональні дані</h2>
-            <div class="center">            
+            <div class="center" style=" flex-direction: column; row-gap: 5px;">            
+                <img src="./photo/1687456886740.jfif" alt="photo" class="photo">
                 <h3 style="margin: 0;">ПІБ: Панченко Ярослав Костянтинович</h3>
                 <b>Дата народження: 07.09.2003</b>
             </div>
@@ -21,7 +22,7 @@
                 <li>2023-2026: Національний університету "Запорізька політехніка"</li>
                 <li>2019-2023: ВСП "Запорізький електротехнічний фаховий коледж Національного університету "Запорізька політехніка"</li>
             </ul>
-            <h2 class="theme center" >Досвід роботи</h2>
+            <h2 class="theme center" style="flex-direction: column;">Досвід роботи</h2>
                 <p style="text-align: center;">Розробляв сайт для екологічної компанї Zero Waste ZP - <a href="https://zerowaste.zp.ua/">посилання</a></p>
             <h2 class="theme">Професійні навички</h2>
                 <ol>
@@ -32,33 +33,76 @@
                     <li>Database management systems: NoSQL (MongoDB).</li>
                     <li>Teamwork: Git, GitHub.</li>
                 </ol>
-            <h2 class="theme">Контактна інформація</h2>
-            <ul>
+            <h2 class="theme" >Контактна інформація</h2>
+            <ul style="margin-bottom: 5px;">
                 <li>yaroslav.ror@gmail.com</li>
                 <li>0966250417</li>
             </ul>
+            <div class="center" style="column-gap: 10px;">
+                <a href="https://www.linkedin.com/in/yaroslav-panchenko-b85142273/" class="center" style="column-gap: 5px;">
+                    <img src="./photo/LinkedIn_logo_initials.png" alt="photo" class="photoSmall">
+                    <p>LinkedIn</p>
+                </a>
+                <a href="https://t.me/Yaroslav_Pa" class="center" style="column-gap: 5px; ">
+                    <img src="./photo/telegram-logo-png.png" alt="photo" class="photoSmall">
+                    <p>Telegram</p>
+                </a>
+            </div>
+        </div>
+        <div class="border" >
+            <h3 class="mainTheme"  style="margin: 0;" >Зво-ротній зв’язок</h3>
+            <div class="center" style="column-gap: 10px;  flex-direction: column; padding: 5px;">
+                <p>Імя</p>
+                <input type="text">
+                <p>Електронна пошта</p>
+                <input type="text">
+                <p>Телефон</p>
+                <input type="text">
+                <p>Текст повідомлення</p>
+                <textarea cols="20" rows="3"></textarea>
+                <button type="button" style="margin-top: 10px;">Send</button>
+            </div>
+
         </div>
     </div>
 
 </body>
 </html>
 <style>
+    .mainTheme{
+        text-align: center;
+        background-color: aquamarine;
+        margin-top: 0;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
     .theme{
         text-align: center; 
         background-color: lightskyblue;
         text-decoration-line: underline;
     }
     .center{
-        row-gap: 5px;
         display: flex; 
-        justify-content: center;
         align-items: center;
-        flex-direction: column;
+        align-content: center;
+        justify-content: center;
     }
     .border {
         border-style: dotted;
         border-width: 2px;
         border-color:black;
         border-radius: 0.5rem;
+    }
+    /* LR-2 */
+    .photo{
+        max-height: 100px;
+        border-radius: 1rem;
+    }
+    .photoSmall{
+        max-height: 25px;
+        border-radius: 0.25rem;
+    }
+    .contactsCenter{
+        margin-bottom: 10px;
     }
 </style>
