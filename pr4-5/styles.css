@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 5%;
+    width: 90%;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.pagesNavbar {
+    padding: 0.3rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    width: 100%;
+    height: max-content;
+    background-color: rgb(110, 110, 110);
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li {
+    
+    padding: 4px 8px;
+    border-radius: 9999px;
+    background-color: #085968;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+main {
+    max-width: 1400px;
+    margin: 18px auto;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main section{
+    width:fit-content;
+}
+
+main section section{
+    margin-bottom: 30px;
+}
+
+h3 {
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Зміст */
+.themesOfPage{
+   
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    align-items: flex-start;
+}
+
+.themesOfPage ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem; 
+}
+
+.themesOfPage a, h3, ul{
+    color: #333;
+    margin: 0;
+}
+
+#infoSection img{
+    height: 200px;
+    align-items: flex-start;
+}
+
+.current-page {
+    background-color: #007bff;
+}
+
+.current-page a{
+    color: #fff;
+}
+
+
+main #infoSection {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    padding: 5px 10px;
+    width:400px; 
+    height: fit-content;
+    order: 1;
+}
+
+main #infoSection h2{
+    background-color: #c2c2c2;
+    padding: 10px;
+}
+
+.infoGrid {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.infoGrid tr{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoGrid td {
+
+    border-bottom: 1px solid #aaa;
+    padding: 8px 4px; 
+    text-align: center;
+
+    background-color: #f9f9f9; 
+}
+
+.infoGrid td:first-child {
+    font-weight: bold; 
+    background-color: #e5e5e5; 
+}
+
+.invisiblePart {
+    visibility: hidden;
+}
+
+.almostInvisibleHeight {
+    max-height: 0px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        max-width: fit-content;
+        flex-direction: column;
+        align-items:center;
+        padding: 5px 20px;
+    }
+    main #infoSection {
+        width: fit-content;
+        order: 0;
+    }
+    nav ul {
+        flex-direction: column;
+        row-gap: 0.4rem;
+    }
+    h2 {
+        text-align: center;
+    }
+    ul, ol {
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    main {
+        max-width: 1000px;
+    }
+
+}
+/* Підвал */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer a{
+    color: aqua;
+}
