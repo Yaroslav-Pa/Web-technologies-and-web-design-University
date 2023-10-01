@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Резюме</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body >
+    <div class="d-flex flex-column row-gap-4 justify-content-center align-items-center position-relative">    
+        <div style="max-width: 45rem;" class="border border-3">    
+            <h1 class="text-bg-primary text-center fs-3 rounded-top-2">Резюме</h1>
+            <h2 class="text-bg-info text-center fs-3">Персональні дані</h2>
+            <div class="d-flex flex-column row-gap-2 align-items-center my-4">            
+                <img src="./photo/1687456886740.jfif" alt="photo" class="photo">
+                <h3 style="margin: 0;">ПІБ: Панченко Ярослав Костянтинович</h3>
+                <p class="fw-medium m-0">Дата народження: 07.09.2003</p>
+            </div>
+            <h2 style="margin-bottom: 0;" class="text-bg-info text-center fs-3">Освіта</h2>
+            <h4 style="margin: 0 0; text-align: center; "> <sup> у зворотному хронологічному порядку </sup></h4>
+            <ul class="d-flex flex-column row-gap-2">
+            
+                <li><p class="fw-semibold mb-1">2023-2026:</p> Національний університету "Запорізька політехніка"</li>
+                <li><p class="fw-semibold mb-1">2019-2023:</p> ВСП "Запорізький електротехнічний фаховий коледж Національного університету "Запорізька політехніка"</li>
+            </ul>
+            <h2 class="text-bg-info text-center fs-3" style="flex-direction: column;">Досвід роботи</h2>
+                <p style="text-align: center;">Розробляв сайт для екологічної компанї Zero Waste ZP - <a href="https://zerowaste.zp.ua/">посилання</a></p>
+            <h2 class="text-bg-info text-center fs-3">Професійні навички</h2>
+                <ol class="d-flex flex-column row-gap-2">
+                    <li><p class="fw-semibold mb-1">Languages:</p> HTML, CSS, JavaScript (Vanilla, ES6), C++, C#</li>
+                    <li><p class="fw-semibold mb-1">Frameworks:</p> Vue.js 2/3, Vite, Nuxt, Tailwind CSS</li>
+                    <li><p class="fw-semibold mb-1">Libraries:</p> Leaflet.js, Axios, Email.js, Moment.js, Google API</li>
+                    <li><p class="fw-semibold mb-1">Instruments:</p>Instruments: NPM & NVM, Swagger, Postman, Yarn, Figma, Trello, Storyblock</li>
+                    <li><p class="fw-semibold mb-1">Database management systems:</p> NoSQL (MongoDB).</li>
+                    <li><p class="fw-semibold mb-1">Teamwork:</p> Git, GitHub.</li>
+                </ol>
+            <h2 class="text-bg-info text-center fs-3" >Контактна інформація</h2>
+            <ul style="margin-bottom: 5px;" >
+                <li>yaroslav.ror@gmail.com</li>
+                <li>0966250417</li>
+            </ul>
+            <div class="center" style="column-gap: 10px;">
+                <a href="https://www.linkedin.com/in/yaroslav-panchenko-b85142273/" class="d-flex flex-row column-gap-2">
+                    <img src="./photo/LinkedIn_logo_initials.png" alt="photo" class="photoSmall">
+                    <p>LinkedIn</p>
+                </a>
+                <a href="https://t.me/Yaroslav_Pa" class="d-flex flex-row column-gap-2">
+                    <img src="./photo/telegram-logo-png.png" alt="photo" class="photoSmall">
+                    <p>Telegram</p>
+                </a>
+            </div>
+        </div>
+        <div class="border border-3 d-flex flex-column p-0 pb-2 align-items-center">
+            <h3 class="text-bg-primary text-center fs-3 rounded-top-2 w-100">Зворотній зв'язок</h3>
+            <div class="center gap-3 d-flex flex-column mx-2">
+                <div class="form-group">
+                    <label for="nameInput">Ім'я</label>
+                    <input type="text" class="form-control" id="nameInput">
+                    <div class="invalid-feedback">Некоректне ім'я</div>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Електронна пошта</label>
+                    <input type="text" class="form-control" id="emailInput">
+                    <div class="invalid-feedback">Некоректна електронна пошта</div>
+                </div>
+                <div class="form-group">
+                    <label for="phoneInput">Телефон</label>
+                    <input type="text" class="form-control" id="phoneInput">
+                    <div class="invalid-feedback">Некоректний номер телефону</div>
+                </div>
+                <div class="form-group">
+                    <label for="textInput">Текст повідомлення</label>
+                    <textarea class="form-control" rows="3" id="textInput"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" id="sendButton">Send</button>
+                <div id="messageLength" class="fs-6"></div>
+            </div>
+        </div>
+            
+        
+        <div>
+            <a href="tabl.html" style="text-decoration-line: underline; color: red;">Я вмію створюти таблиці</a>
+        </div>
+        <img src="./photo/Windows_11_Clippy_paperclip_emoji.png" class="position-absolute bottom-0 end-0" alt="">
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        const namePattern = /^[a-zA-Zа-яА-ЯІіЇї]{3,20}$/;
+        const phonePattern = /^[0-9()+-]{9,17}$/;
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+        function checkValidation() {
+            const nameValue = document.getElementById('nameInput').value;
+            const phoneValue = $('#phoneInput').val();
+            const emailValue = $('#emailInput').val();
+            const isNameValid = namePattern.test(nameValue);
+            const isPhoneValid = phonePattern.test(phoneValue);
+            const isEmailValid = emailPattern.test(emailValue);
+            console.log(isNameValid, isPhoneValid, isEmailValid);
+            if (isNameValid && isPhoneValid && isEmailValid) {
+                $('#sendButton').prop('disabled', false);
+            } else {
+                $('#sendButton').prop('disabled', true);
+            }
+        }
+
+        $('#sendButton').on("click", function () {
+            const messageLength = $('textarea').val().length;
+            $('#messageLength').html(`Довжина тексту: ${messageLength} символів`);
+            alert("Дані відправлені успішно!");
+        });
+
+        $('#nameInput').on('input', () => {
+            if (namePattern.test(document.getElementById('nameInput').value)){
+                $('#nameInput').addClass('is-valid');
+                $('#nameInput').removeClass('is-invalid');
+            }else{
+                $('#nameInput').removeClass('is-valid');
+                $('#nameInput').addClass('is-invalid');
+            }
+        })
+
+        $('#emailInput').on('input', function () {
+            if (emailPattern.test($(this).val())) {
+                $(this).removeClass('is-invalid');
+                $(this).addClass('is-valid');
+            } else {
+                $(this).removeClass('is-valid');
+                $(this).addClass('is-invalid');
+            }
+        });
+        $('#phoneInput').on('input', function () {
+            if (phonePattern.test($(this).val())) {
+                $(this).removeClass('is-invalid');
+                $(this).addClass('is-valid');
+            } else {
+                $(this).removeClass('is-valid');
+                $(this).addClass('is-invalid');
+            }
+            
+        });
+        $('#nameInput, #phoneInput, #emailInput').on('input', checkValidation);
+        checkValidation();
+    });
+</script>
+</html>
+<style>
+    * {
+        font: 1.1rem "Fira Sans", sans-serif;
+    }
+    .mainTheme{
+        text-align: center;
+        background-color: aquamarine;
+        margin-top: 0;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+    .theme{
+        text-align: center; 
+        background-color: lightskyblue;
+        text-decoration-line: underline;
+        color: rgb(55, 52, 224);
+    }
+    .center{
+        display: flex; 
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .border {
+        border-style: dotted;
+        border-width: 2px;
+        border-color:black;
+        border-radius: 0.5rem;
+    }
+    /* LR-2 */
+    .photo{
+        max-height: 100px;
+        border-radius: 1rem;
+    }
+    .photoSmall{
+        max-height: 25px;
+        border-radius: 0.25rem;
+    }
+    .contactsCenter{
+        margin-bottom: 10px;
+    }
+    /* LR-3 */
+    .Screpy {
+        position: absolute;
+        right: 0rem;
+        bottom: 0rem;
+    }
+
+</style>

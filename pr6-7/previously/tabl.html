@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table</title>
+</head>
+<body>
+<table border="5px" width="100%" style="border-collapse: collapse;">
+<caption>16 варіант</caption>
+    <tr>
+        <td class="table1" rowspan="2" style=" text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, maiores?</td>
+        <td class="table2" style=" text-align: center;">Lorem ipsum dolor sit amet consectetur.</td>
+        <td class="table3" rowspan="2" style=" text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, maiores?</td>
+    </tr>
+    <tr>
+        <td class="table4" style="text-align: center;">Lorem ipsum dolor sit amet consectetur.</td>
+    </tr>
+    <tr>
+        <th class="table5" colspan="3" style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, maiores?</th>
+    </tr>
+</table>
+</body>
+</html>
+<style>
+    * {
+        font: 1.1rem "Fira Sans", sans-serif;
+    }
+    .table1{
+        background-color: lightgrey;
+    }
+    .table1:hover {
+        background-color: burlywood;
+    }
+    .table2{
+        background-color: lightgrey;
+    }
+    .table2:hover {
+        background-color: burlywood;
+    }
+    .table3:hover {
+        background-color: burlywood;
+    }
+    .table3{
+        background-color: lightgrey;
+    }
+    .table4:hover {
+        background-color: burlywood;
+    }
+    .table5:hover {
+        background-color: burlywood;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 1000ms;
+    }
+</style>

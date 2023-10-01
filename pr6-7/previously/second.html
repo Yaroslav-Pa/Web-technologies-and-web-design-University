@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Резюме</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body >
+    <div class="center" style="column-gap: 20px; row-gap: 20px; flex-direction: column; position: relative;">    
+        <div style="max-width: 45rem;" class="border">    
+            <h1 class="mainTheme">Резюме</h1>
+            <h2 class="theme">Персональні дані</h2>
+            <div class="center" style=" flex-direction: column; row-gap: 5px;">            
+                <img src="./photo/1687456886740.jfif" alt="photo" class="photo">
+                <h3 style="margin: 0;">ПІБ: Панченко Ярослав Костянтинович</h3>
+                <b>Дата народження: 07.09.2003</b>
+            </div>
+            <h2 style="margin-bottom: 0;" class="theme">Освіта</h2>
+            <h4 style="margin: 0 0; text-align: center; "> <sup> у зворотному хронологічному порядку </sup></h4>
+            <ul>
+            
+                <li><p style="font-weight: 600;">2023-2026:</p> Національний університету "Запорізька політехніка"</li>
+                <li><p style="font-weight: 600;">2019-2023:</p> ВСП "Запорізький електротехнічний фаховий коледж Національного університету "Запорізька політехніка"</li>
+            </ul>
+            <h2 class="theme center" style="flex-direction: column;">Досвід роботи</h2>
+                <p style="text-align: center;">Розробляв сайт для екологічної компанї Zero Waste ZP - <a href="https://zerowaste.zp.ua/">посилання</a></p>
+            <h2 class="theme">Професійні навички</h2>
+                <ol>
+                    <li><p style="font-weight: 800;">Languages:</p> HTML, CSS, JavaScript (Vanilla, ES6), C++, C#</li>
+                    <li><p style="font-weight: 800;">Frameworks:</p> Vue.js 2/3, Vite, Nuxt, Tailwind CSS</li>
+                    <li><p style="font-weight: 800;">Libraries:</p> Leaflet.js, Axios, Email.js, Moment.js, Google API</li>
+                    <li><p style="font-weight: 800;">Instruments:</p>Instruments: NPM & NVM, Swagger, Postman, Yarn, Figma, Trello, Storyblock</li>
+                    <li><p style="font-weight: 800;">Database management systems:</p> NoSQL (MongoDB).</li>
+                    <li><p style="font-weight: 800;">Teamwork:</p> Git, GitHub.</li>
+                </ol>
+            <h2 class="theme" >Контактна інформація</h2>
+            <ul style="margin-bottom: 5px;">
+                <li>yaroslav.ror@gmail.com</li>
+                <li>0966250417</li>
+            </ul>
+            <div class="center" style="column-gap: 10px;">
+                <a href="https://www.linkedin.com/in/yaroslav-panchenko-b85142273/" class="center" style="column-gap: 5px;">
+                    <img src="./photo/LinkedIn_logo_initials.png" alt="photo" class="photoSmall">
+                    <p>LinkedIn</p>
+                </a>
+                <a href="https://t.me/Yaroslav_Pa" class="center" style="column-gap: 5px; ">
+                    <img src="./photo/telegram-logo-png.png" alt="photo" class="photoSmall">
+                    <p>Telegram</p>
+                </a>
+            </div>
+        </div>
+        <div class="border" style="width: 45rem;" >
+            <h3 class="mainTheme"  style="margin: 0;" >Зво-ротній зв’язок</h3>
+            <div class="center" style="column-gap: 10px;  flex-direction: column; padding: 5px;">
+                <p>Імя</p>
+                <input type="text" id="nameInput">
+                <p>Електронна пошта</p>
+                <input type="text" id="emailInput">
+                <p>Телефон</p>
+                <input type="text" id="phoneInput">
+                <p>Текст повідомлення</p>
+                <textarea cols="20" rows="3" id="textInput"></textarea>
+                <button type="button" style="margin-top: 10px;" id="sendButton">Send</button>
+                <div id="messageLength"></div>
+            </div>
+        </div>
+        <hr style="width: 200px;">
+        <div>
+            <a href="tabl.html" style="text-decoration-line: underline; color: red;">Я вмію створюти таблиці</a>
+        </div>
+        <img src="./photo/Windows_11_Clippy_paperclip_emoji.png" class="Screpy" alt="">
+    </div>
+
+</body>
+<script>
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const nameInput = document.getElementById("nameInput");
+    //     const phoneInput = document.getElementById("phoneInput");
+    //     const emailInput = document.getElementById("emailInput");
+    //     const sendButton = document.getElementById("sendButton");
+    //     const messageTextarea = document.querySelector('textarea');
+    //     const messageLengthElement = document.getElementById('messageLength');
+
+    //     const namePattern = /^[a-zA-Zа-яА-ЯІіЇї]+$/;
+    //     const phonePattern = /^[0-9()+-]+$/;
+    //     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    //     sendButton.addEventListener("click", function () {
+    //         const nameValue = nameInput.value;
+    //         const phoneValue = phoneInput.value;
+    //         const emailValue = emailInput.value;
+    //         const messageLength = messageTextarea.value.length;
+
+            
+    //         messageLengthElement.textContent = `Довжина тексту: ${messageLength} символів`;
+
+    //         if (!namePattern.test(nameValue)) {
+    //             alert("Ім'я повинно містити лише українські або англійські літери.");
+    //         }else
+    //         if (!phonePattern.test(phoneValue)) {
+    //             alert("Телефон повиннен містити лише арабські цифри, пробіли та символи +, -, (, ).");
+    //         }else
+    //         if (!emailPattern.test(emailValue)) {
+    //             alert("Адреса пошти має бути у стандартному формату адреси електронної пошти (symbols@symbols.symbols)");
+    //         }else
+    //         alert("Дані відправлені успішно!");
+    //     });
+    // });
+    $(document).ready(function () {
+        const namePattern = /^[a-zA-Zа-яА-ЯІіЇї]+$/;
+        const phonePattern = /^[0-9()+-]+$/;
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+        $('#sendButton').on("click", function () {
+            const nameValue = $('#nameInput').val();
+            const phoneValue = $('#phoneInput').val();
+            const emailValue = $('#emailInput').val();
+            const messageLength = $('textarea').val().length;
+
+            
+            $('#messageLength').html(`Довжина тексту: ${messageLength} символів`);
+
+            if (!namePattern.test(nameValue)) {
+                alert("Ім'я повинно містити лише українські або англійські літери.");
+            }else
+            if (!phonePattern.test(phoneValue)) {
+                alert("Телефон повиннен містити лише арабські цифри, пробіли та символи +, -, (, ).");
+            }else
+            if (!emailPattern.test(emailValue)) {
+                alert("Адреса пошти має бути у стандартному формату адреси електронної пошти (symbols@symbols.symbols)");
+            }else
+            alert("Дані відправлені успішно!");
+        });
+    });
+</script>
+</html>
+<style>
+    * {
+        font: 1.1rem "Fira Sans", sans-serif;
+    }
+    .mainTheme{
+        text-align: center;
+        background-color: aquamarine;
+        margin-top: 0;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+    .theme{
+        text-align: center; 
+        background-color: lightskyblue;
+        text-decoration-line: underline;
+        color: rgb(55, 52, 224);
+    }
+    .center{
+        display: flex; 
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .border {
+        border-style: dotted;
+        border-width: 2px;
+        border-color:black;
+        border-radius: 0.5rem;
+    }
+    /* LR-2 */
+    .photo{
+        max-height: 100px;
+        border-radius: 1rem;
+    }
+    .photoSmall{
+        max-height: 25px;
+        border-radius: 0.25rem;
+    }
+    .contactsCenter{
+        margin-bottom: 10px;
+    }
+    /* LR-3 */
+    .Screpy {
+        position: absolute;
+        right: 0rem;
+        bottom: 0rem;
+    }
+
+</style>
